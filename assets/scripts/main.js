@@ -9,11 +9,13 @@ fetch('data.json')
           <picture>
             <source media="(min-width: 768px)" srcset="${product.image.tablet}">
             <source media="(min-width: 375px)" srcset="${product.image.mobile}">
-            <img src="${product.image.desktop}" alt="${product.name}">
+            <img class="product-image" src="${product.image.desktop}" alt="${product.name}">
+            <button class="add-to-cart"> Add to Cart</button>
           </picture>
+          <p class="category">${product.category}</p>
           <h2>${product.name}</h2>
           <p class="price">$${product.price.toFixed(2)}</p>
-          <button class="add-to-cart">Add to Cart</button>
+        
         `;
         main.appendChild(productElement);
       });

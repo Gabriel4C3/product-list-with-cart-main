@@ -1,0 +1,42 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'redhattext';
+    src: url('.fonts/RedHatText-VariableFont_wght.ttf') format('truetype');
+}
+*{
+    box-sizing: border-box;
+    font-family: 'redhattext', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+body{
+    background-color: hsl(20, 50%, 98%);
+    color: hsl(220, 13%, 13%);
+    margin: 0;
+    padding: 0;
+}
+h2{
+    font-size: 1.5rem;
+    margin: 0;
+    color:   hsl(14, 65%, 9%);
+}
+.price{
+    font-size: 1.25rem;
+    color: hsl(14, 86%, 42%);
+}
+.category{
+    font-size: 0.875rem;
+    color: hsl(12, 20%, 44%);
+}
+picture{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: center;
+}
+.product-image{
+    width: 86%;
+    border-radius: 0.5rem;
+   
+}
