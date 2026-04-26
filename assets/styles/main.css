@@ -35,13 +35,22 @@ picture{
     margin: 0 auto;
     justify-content: center;
 }
+
+
 .product-image{
     width: 100%;
     border-radius: 0.5rem;
-    border-color: hsl(14, 86%, 42%);
+   /* border-color: hsl(14, 86%, 42%); 
     border-style: solid;
-    border-width: 0.05rem;
+    border-width: 0.05rem;*/
+    border: solid hsl(14, 86%, 42%) 0rem;
+     
    
+}
+.product-image:hover{
+    border-width: 0.15rem;
+    border: solid hsl(14, 86%, 42%) 0.19rem;
+    transition: 0ms.3s ease-in-out;
 }
 button{
     background-color: hsl(20, 50%, 98%);
@@ -52,3 +61,51 @@ button{
     font-size: 1rem;
     cursor: pointer;
 }
+button:hover{
+    background-color: hsl(14, 86%, 42%);
+    color: hsl(20, 50%, 98%);
+    border: solid hsl(14, 65%, 9%) 0.10rem;
+    transition: 0ms.2s ease-in-out;
+}
+.cart-button{
+    background-color: hsl(14, 86%, 42%);
+    color: hsl(20, 50%, 98%);
+    border: solid hsl(14, 65%, 9%) 0.10rem;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+    }
+
+.cart-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cart-box button {
+  border: none;
+  padding: 10px 16px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.add-to-cart {
+  background: orange;
+  color: white;
+}
+
+.increase,
+.decrease {
+  background: #222;
+  color: white;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+.cart-box span {
+  font-size: 18px;
+  font-weight: bold;
+}
+
